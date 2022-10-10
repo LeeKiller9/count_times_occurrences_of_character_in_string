@@ -8,9 +8,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter character want to count: ");
         char c = scanner.next().charAt(0); // ??? khai báo 1 char
-        ArrayList<Integer> arrayIndex = new ArrayList<Integer>(); // sử dụng arraylist để có thể thêm gtrị khi chưa bik size array
+        ArrayList<Integer> arrayIndex = new ArrayList<>(); // sử dụng arraylist để có thể thêm gtrị khi chưa bik size array
         int count = 0;
-        for (int i = 0 ; i < txt.length() ; i++) {
+        for (int i = 0; i < txt.length(); i++) {
             if (c == txt.charAt(i)) {
                 arrayIndex.add(i);
                 count++;
